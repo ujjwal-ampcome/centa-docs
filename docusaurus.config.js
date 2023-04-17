@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Centa Ams',
-  tagline: 'Welcome to Centa documentation',
+  tagline: 'Welcome To Centa Documentation',
   favicon: 'img/favicon.ico',
   url: 'https://centa-docs.netlify.app',
   baseUrl: '/',
