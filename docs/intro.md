@@ -2,46 +2,31 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Getting Started
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Let's discover **Centa Ams in less than 5 minutes**.
 
-## Getting Started
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
+<!-- ### What you'll need
 
 - [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies. -->
 
-## Generate a new site
+## Dashboard
 
-Generate a new Docusaurus site using the **classic template**.
+![Dashboard](/img/centa-1.png)
 
-The classic template will automatically be added to your project after you run the command:
+### Stages
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+- **Work Requests**: This shows the total number of Work requests issued
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- **Pending Reviews**: This count represents the total number of questions pending for review
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+- **Pending Approvals**: This count represents the total number of questions pending for approval
 
-## Start your site
+- **Closed Work Requests**: This count represents the number of Work requests closed by all users
 
-Run the development server:
+- **Total Paper Requests**: This count represents the total number of Paper Requests issued
 
-```bash
-cd my-website
-npm run start
-```
+- **Pending Papers**: This count represents the total number of papers pending for approval
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
