@@ -1,27 +1,55 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: 'Getting Started',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Getting Started",
+    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
-        This page will give you a quick review of the stages involved in deveploping our application
+        This page will give you a quick review of the stages involved in
+        understanding our application
       </>
     ),
   },
   {
-    title: 'Question Creation',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Users",
+    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    description: (
+      <>A brief overview of user roles that can be assigned to any ams user </>
+    ),
+  },
+  {
+    title: "Question Creation",
+    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
-        Question creation starts with Work Requests, admin can create work requests and can see all created requests by other users too in this table.
+        Question creation is the process of developing questions that can be
+        used to assess knowledge, skills, and understanding of a particular
+        topic or subject.
+      </>
+    ),
+  },
 
-        You also get an overview of the question creation, its work requests and setup
-
-
+  {
+    title: "Paper Setting",
+    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    description: (
+      <>
+        The process of creating paper which involves participation from Product
+        Managers, Paper Setter & Paper Approver
+      </>
+    ),
+  },
+  {
+    title: "Results",
+    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    description: (
+      <>
+        In the assessment management system, the "Results" section typically
+        encompasses various functionalities related to test events, evaluations,
+        and candidate registration.
       </>
     ),
   },
@@ -37,21 +65,36 @@ const FeatureList = [
   // },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--6')}>
+    <div className={clsx("col col--6")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
-<div className="text--center padding-horiz--md">
-        {
-          (title === 'Getting Started') ? 
-            <a href='/docs/intro'><h3>{title}</h3></a> : 
-              (title === 'Question Creation') ? 
-                <a href='/docs/category/question-creation'><h3>{title}</h3></a> : 
-                    null
-        }
-          <p>{description}</p>
+      <div className="text--center padding-horiz--md">
+        {title === "Getting Started" ? (
+          <a href="/docs/intro">
+            <h3>{title}</h3>
+          </a>
+        ) : title === "Question Creation" ? (
+          <a href="/docs/category/question-creation">
+            <h3>{title}</h3>
+          </a>
+        ) : title === "Users" ? (
+          <a href="/docs/users">
+            <h3>{title}</h3>
+          </a>
+        ) : title === "Paper Setting" ? (
+          <a href="/docs/category/paper-setting">
+            <h3>{title}</h3>
+          </a>
+        ) : title === "Results" ? (
+          <a href="/docs/category/results">
+            <h3>{title}</h3>
+          </a>
+        ) : null}
+
+        <p>{description}</p>
       </div>
     </div>
   );
