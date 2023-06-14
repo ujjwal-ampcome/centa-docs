@@ -1,0 +1,9 @@
+{
+  "position": 5,
+  "label": "Results",
+  "link": {
+    "description": "In the assessment management system, the 'Results' section typically encompasses various functionalities related to test events, evaluations, and candidate registration.",
+    "type": "generated-index",
+    "title": "Results"
+  }
+}
